@@ -1,0 +1,461 @@
+/* general styling */
+@media only screen and (min-width: 600px) {
+    .mobile_html {display: none;}
+
+html {
+    z-index: -4;
+    background-image: url("assets/black_texture.jpg"); /* image */
+    background-size: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/black_texture.jpg"); /* image */
+    background-size: cover;
+}
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100vw;
+    display: flex;
+}
+
+p {
+    color: #f3e998;
+}
+
+ul li {
+    color: #f3e998;
+}
+
+h1, h2 {
+    color: #eab440;
+    text-align: center;
+    vertical-align: center;
+
+}
+/* end of general styling I think */
+
+header h1 {
+    align-self: left;
+    width: 100%vw;
+}
+
+.desktop_logo {
+    width: 20vw;
+    height: 20vh;
+}
+nav {
+    background-color: black;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #eab440 !important; /* Change this to your desired hover color */
+  }
+
+
+.columns {
+    width: 80vw;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.initial_image {
+    width: 100vw;
+    height: 80vh;
+}
+
+.initial_image img {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+}
+
+.initial_image h1 {
+    color: #EAEAEA;
+    vertical-align: auto;
+}
+
+.be_bold {
+    margin: auto;
+}
+
+
+.hook_p1 {
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.service_list {
+    list-style: circle;
+}
+
+.col_1 {
+    height: fit-content;
+}
+
+.col_2 {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.table_example {
+    width: 80%;
+    height: 300px;
+    border-radius: 17px;
+}
+/* Footer section */
+
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer > p {
+    height: 100%;
+    width: fit-content;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.social_icons > a > img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.social_icons > a > .honeybook {
+    width: 200px;
+    height: auto;
+}
+
+footer > a > button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 17px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    color: black;
+    background-color: #eab440;
+}
+/* end footer */
+
+/* services page */ 
+.services_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    width: 80vw;
+}
+
+.service_slogan {
+    font-size:  3rem;
+    margin-top: 1rem;
+}
+
+.service_p1 {
+    text-align: center;
+}
+
+.service_h2 {
+    text-align: left;
+    margin-top: .5rem;
+}
+/* end services styling */
+
+/* terms and conditions styling */
+
+.terms_h2 {
+    margin-top: 1rem;
+}
+.terms_lastp {
+    text-transform: uppercase;
+}
+
+.terms_h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #eab440;
+}
+/*end terms and conditions styling */
+
+/* contact styling */
+
+#contact_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+#contact_box h3 {
+    text-align: center;
+}
+  
+#contact_box input, textarea {
+    width: 90%;
+}
+ form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: ghostwhite;
+    border-radius: .7rem;
+    gap: .5rem;
+    padding: 1rem;
+  }
+
+
+form button {
+    background-color: #C48A47;
+    margin-top: .7rem;
+    width: 90%;
+    align-self: center;
+    width: 40%;
+    border-radius: .7rem;
+}
+
+.contact_h3 {
+    color: #f3e998;
+}
+}
+/* end contact styling */
+
+
+/* phone styling */
+
+@media only screen and (max-width: 600px) {
+/*general styling */
+.mobile_html {
+    background-image: url("assets/black_texture.jpg"); /* image */
+    background-size: cover;
+    z-index: -4;
+}
+
+.mobile_html h1, h2{
+    color: #eab440;
+    text-align: center;
+    vertical-align: center;
+}
+.mobile_display{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
+.desktop_display {display: none;}
+
+.mobile_html p {
+    font-size: .8rem;
+    color: #f3e998;
+}
+
+/* header logo & nav bar */
+.mobile_header {
+    display: flex;
+    justify-content: space-between;
+}
+.mobile_header nav {
+    margin-right: 5vw;
+}
+
+/* home page mobile */
+.mobile_home_img {
+    height: 40vh;
+    width: 100vw;
+    background-image: url("assets/mask_party_mobile.jpg"); /* image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile_container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.mobile_home_p1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.mobile_services {
+    margin-bottom: 2rem;
+}
+.mobile_services img {
+    width: 80vw;
+    height: 45vh;
+    border-radius: 16px;
+    margin-left: 5vw;
+    margin-top: 2rem;
+}
+
+.mobile_services h1 {
+    margin-top: .8rem;
+}
+
+
+.service_list_mobile li {
+    list-style: circle;
+    color: #f3e998;
+}
+
+small {
+    margin-top: .5rem;
+    color:#f3e998;
+    margin-bottom: 1rem;
+}
+
+/* mobile contact section */
+
+#contact_box_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+#contact_box_mobile h3 {
+    text-align: center;
+}
+  
+#contact_box_mobile input, textarea {
+    width: 90%;
+}
+ form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    background-color: ghostwhite;
+    border-radius: .7rem;
+    gap: .5rem;
+    padding: 1rem;
+  }
+
+
+form button {
+    background-color: #C48A47;
+    margin-top: .7rem;
+    width: 90%;
+    align-self: center;
+    width: 40%;
+    border-radius: .7rem;
+}
+
+.contact_h3 {
+    color: #f3e998;
+}
+/* mobile bottom */
+
+.mobile_nav {
+    display: flex;
+}
+/*mobile footer section */
+
+.mobile_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+}
+
+.social_icons_mobile {
+    transform: scale(.5);
+    display: flex;
+    gap: 3rem;
+}
+
+/* mobile service page */ 
+
+.service_h2_venue {
+    margin-bottom: 2rem;
+}
+.service_slogan_mobile {
+    margin-top: 2rem;
+}
+
+.mobile_line {
+    color: #f3e998;
+}
+
+.weekend_pricing_mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: .2rem;
+}
+
+/* end mobile servie page */
+
+/* mobile terms & conditions page */
+
+.terms_h2_mobile {
+    margin-top: 2rem;
+}
+.terms_h3_mobile {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #eab440;
+}
+
+.terms_lastp_mobile {
+    text-transform: uppercase;
+}
+/* end mobile terms & conditions page */
+
+/* mobile contact page styling */
+.contact_p1_mobile {
+    margin-bottom: 2rem;
+}
+.contact_mobile_h2 {
+    margin-top: 2rem;
+}
+
+.contact_h3_mobile {
+    color: #f3e998;
+    font-size: 1rem;
+}
+
+/* end mobile contact page styling */
+}
+
+/* end of phone styling pls help */
